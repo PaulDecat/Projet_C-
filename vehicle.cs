@@ -1,19 +1,27 @@
-public class Véhicule {
-    public int Id;
-    public string Marque;
-    public string Modele;
-    public int Annee;
-    public string Statut;
+using System;
 
-    public Véhicule(int id, string marque, string modele, int annee, string statut) {
-        Id = id;
-        Marque = marque;
-        Modele = modele;
-        Annee = annee;
-        Statut = statut;
-    }
+namespace TPFinal
+{
+    public class Vehicule
+    {
+        public int Id { get; set; }
+        public string Constructeur { get; set; }
+        public string Modele { get; set; }
+        public int AnneeDeFabrication { get; set; }
+        public string Disponibilite { get; set; }
 
-    public static void afficher() {
-        Console.WriteLine(ID | Marque | Modèle | Année | Statut);
+        public Vehicule(int id, string constructeur, string modele, int anneeDeFabrication)
+        {
+            Id = id;
+            Constructeur = constructeur;
+            Modele = modele;
+            AnneeDeFabrication = anneeDeFabrication;
+            Disponibilite = "Disponible";
+        }
+
+        public void AfficherDetails()
+        {
+            Console.WriteLine($"ID: {Id}, Constructeur: {Constructeur}, Modèle: {Modele}, Année: {AnneeDeFabrication}, Disponibilité: {Disponibilite}");
+        }
     }
 }
