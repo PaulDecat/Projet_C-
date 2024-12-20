@@ -1,0 +1,15 @@
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\bin\Debug\net9.0\TPFinalCsharp.exe
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\bin\Debug\net9.0\TPFinalCsharp.deps.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\bin\Debug\net9.0\TPFinalCsharp.runtimeconfig.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\bin\Debug\net9.0\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\bin\Debug\net9.0\TPFinalCsharp.pdb
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.AssemblyInfoInputs.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.AssemblyInfo.cs
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.csproj.CoreCompileInputs.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.sourcelink.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\refint\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.pdb
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\TPFinalCsharp.genruntimeconfig.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\Projet-C#\Projet_C-\TPFinalCsharp\obj\Debug\net9.0\ref\TPFinalCsharp.dll
