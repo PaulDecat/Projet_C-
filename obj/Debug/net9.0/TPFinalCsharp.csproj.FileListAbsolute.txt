@@ -28,3 +28,18 @@ C:\Users\33760\Desktop\Etudes\Ynov\Dev\B2\C#\Projet C#\Projet_C-\obj\Debug\net9.
 C:\Users\33760\Desktop\Etudes\Ynov\Dev\B2\C#\Projet C#\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.pdb
 C:\Users\33760\Desktop\Etudes\Ynov\Dev\B2\C#\Projet C#\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.genruntimeconfig.cache
 C:\Users\33760\Desktop\Etudes\Ynov\Dev\B2\C#\Projet C#\Projet_C-\obj\Debug\net9.0\ref\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\bin\Debug\net9.0\TPFinalCsharp.exe
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\bin\Debug\net9.0\TPFinalCsharp.deps.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\bin\Debug\net9.0\TPFinalCsharp.runtimeconfig.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\bin\Debug\net9.0\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\bin\Debug\net9.0\TPFinalCsharp.pdb
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.AssemblyInfoInputs.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.AssemblyInfo.cs
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.csproj.CoreCompileInputs.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.sourcelink.json
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\refint\TPFinalCsharp.dll
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.pdb
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\TPFinalCsharp.genruntimeconfig.cache
+C:\Users\delpo\OneDrive\Bureau\Cours\B2\C\Projet_C-\obj\Debug\net9.0\ref\TPFinalCsharp.dll
