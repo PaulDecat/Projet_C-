@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPFinalCsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52de314f9c4ab4ab7352a0176779601a02d0c2cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64552f3b0ccf589d2d66721947d7975055058fc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPFinalCsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPFinalCsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
