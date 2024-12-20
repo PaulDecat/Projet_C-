@@ -1,4 +1,3 @@
-
 using System;
 
 namespace GestionLocation
@@ -12,26 +11,26 @@ namespace GestionLocation
 
             do
             {
-                Console.WriteLine("\n--- Menu de Gestion du Parc ---");
+                Console.WriteLine("Gestion du Parc:");
                 Console.WriteLine("1. Ajouter une voiture");
                 Console.WriteLine("2. Lister les voitures");
                 Console.WriteLine("3. Louer une voiture");
                 Console.WriteLine("4. Rendre une voiture");
                 Console.WriteLine("5. Quitter");
-                Console.Write("Entrez votre choix : ");
+                Console.Write("Quelle est votre choix : ");
 
                 choix = int.Parse(Console.ReadLine());
 
                 switch (choix)
                 {
                     case 1:
-                        Console.Write("Entrez l'ID de la voiture : ");
+                        Console.Write("ID de la voiture : ");
                         int id = int.Parse(Console.ReadLine());
-                        Console.Write("Entrez la marque de la voiture (ex : Toyota, Ford) : ");
+                        Console.Write("Marque de la voiture: ");
                         string marque = Console.ReadLine();
-                        Console.Write("Entrez le modèle de la voiture : ");
+                        Console.Write("Modèle de la voiture : ");
                         string modele = Console.ReadLine();
-                        Console.Write("Entrez l'année de la voiture : ");
+                        Console.Write("Année de la voiture : ");
                         int annee = int.Parse(Console.ReadLine());
 
                         parc.AjouterVoiture(new Voiture(id, marque, modele, annee));
@@ -42,13 +41,13 @@ namespace GestionLocation
                         break;
 
                     case 3:
-                        Console.Write("Entrez l'ID de la voiture à louer : ");
+                        Console.Write("Voiture à louer : ");
                         int idLouer = int.Parse(Console.ReadLine());
                         parc.LouerVoiture(idLouer);
                         break;
 
                     case 4:
-                        Console.Write("Entrez l'ID de la voiture à rendre : ");
+                        Console.Write("Voiture à rendre: ");
                         int idRendre = int.Parse(Console.ReadLine());
                         parc.RendreVoiture(idRendre);
                         break;

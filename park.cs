@@ -1,37 +1,54 @@
 using System;
-using Véhicule;
+using System.Collections.Generic;
 
-class Parc {
-    public string nom;
-    public int capacite;
-    public int nbvoituresactuel;
-    public Parc(string nom, int capacite, int nbvoituresactuel) {
-        this.nom = nom;
-        this.capacite = capacite;
-        this.nbvoituresactuel = nbvoituresactuel;
-    }
+namespace TPFinal
+{
+    public class GestionVehicules
+    {
+        private List<Vehicule> parcVehicules = new List<Vehicule>();
 
-    public static void AjouterVoiture() {
-        nbvoituresactuel = nbvoituresactuel + 1;
-        if nbvoituresactuel => capacite{
-            Console.WriteLine($"Le parc {nom} est plein.");
+        public void AjouterVehicule(Vehicule vehicule)
+        {
+            parcVehicules.Add(vehicule);
+            Console.WriteLine("Le véhicule a été ajouté au parc !");
         }
-    }
 
-    public static ListerVoitures(){
-        List<Voiture> voitures = new List<Voiture>();
-        return voitures;
-    }
-
-    public static LouerVoiture(){
-        nbvoituresactuel = nbvoituresactuel - 1;
-        if nbvoituresactuel <= 0 {
-            Console.WriteLine($"Le parc {nom} est vide.");
-
+        public void ListerVehicules()
+        {
+            Console.WriteLine("\nListe des véhicules disponibles :");
+            foreach (var vehicule in parcVehicules)
+            {
+                vehicule.AfficherDetails();
+            }
         }
-    }
 
-    public static RendreVoiture(){
-        nbvoituresactuel = nbvoituresactuel + 1;
+        public void LouerVehicule(int id)
+        {
+            foreach (var vehicule in parcVehicules)
+            {
+                if (vehicule.Id == id && vehicule.Disponibilite == "Disponible")
+                {
+                    vehicule.Disponibilite = "Loué";
+                    Console.WriteLine("Le véhicule a été loué avec succès !");
+                    return;
+                }
+            }
+            Console.WriteLine("Véhicule introuvable ou déjà loué.");
+        }
+
+        public void RendreVehicule(int id)
+        {
+            foreach (var vehicule in parcVehicules)
+            {
+                if (vehicule.Id == id && vehicule.Disponibilite == "Loué")
+                {
+                    vehicule.Disponibilite = "Disponible";
+                    Console.WriteLine("Le véhicule a été rendu !");
+                    return;
+                }
+            }
+            Console.WriteLine("Véhicule introuvable ou déjà disponible.");
+        }
     }
 }
+
