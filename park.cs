@@ -10,10 +10,10 @@ namespace TPFinal
 
         public GestionVehicules()
         {
-            ChargerVehiculesDepuisFichier("vehicules.txt");
+            VehiculesDepuisFichier("vehicules.txt");
         }
 
-        public void ChargerVehiculesDepuisFichier(string cheminFichier)
+        public void VehiculesDepuisFichier(string cheminFichier)
 {
     try
     {
@@ -38,7 +38,7 @@ namespace TPFinal
                 int id = int.Parse(donnees[0]);
                 if (parcVehicules.Exists(v => v.Id == id))
                 {
-                    Console.WriteLine($"ID déjà existant ignoré : {id}");
+                    Console.WriteLine($"ID déjà existant ignoré: {id}");
                     continue;
                 }
 
@@ -77,7 +77,7 @@ namespace TPFinal
                 Console.WriteLine("\nListe des véhicules disponibles :");
                 foreach (var vehicule in parcVehicules)
                 {
-                    vehicule.AfficherDetails();
+                    vehicule.AfficherDetail();
                 }
             }
         }
@@ -107,7 +107,7 @@ namespace TPFinal
                     return;
                 }
             }
-            Console.WriteLine("Véhicule introuvable ou déjà disponible.");
+            Console.WriteLine("Véhicule introuvable ou déja disponible.");
         }
     }
 }

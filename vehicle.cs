@@ -19,9 +19,9 @@ namespace TPFinal
             Disponibilite = "Disponible";
         }
 
-        public void AfficherDetails()
+        public void AfficherDetail()
         {
-            Console.WriteLine($"ID: {Id}, Constructeur: {Constructeur}, Modèle: {Modele}, Année: {AnneeDeFabrication}, Disponibilité: {Disponibilite}");
+            Console.WriteLine($"ID: {Id}, Constructeur: {Constructeur}, Modele: {Modele}, Année: {AnneeDeFabrication}, Disponibilité: {Disponibilite}");
         }
     }
 }
