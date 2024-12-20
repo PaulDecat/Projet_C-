@@ -1,27 +1,27 @@
 using System;
 
-namespace TPFinal
+namespace LocationVehicules
 {
     public class Vehicule
     {
         public int Id { get; set; }
-        public string Constructeur { get; set; }
+        public string Marque { get; set; }
         public string Modele { get; set; }
-        public int AnneeDeFabrication { get; set; }
-        public string Disponibilite { get; set; }
+        public int Annee { get; set; }
+        public string Statut { get; set; } // "Disponible", "Loué"
 
-        public Vehicule(int id, string constructeur, string modele, int anneeDeFabrication)
+        public Vehicule(int id, string marque, string modele, int annee)
         {
             Id = id;
-            Constructeur = constructeur;
+            Marque = marque;
             Modele = modele;
-            AnneeDeFabrication = anneeDeFabrication;
-            Disponibilite = "Disponible";
+            Annee = annee;
+            Statut = "Disponible";
         }
 
-        public void AfficherDetails()
+        public void AfficherInfo()
         {
-            Console.WriteLine($"ID: {Id}, Constructeur: {Constructeur}, Modèle: {Modele}, Année: {AnneeDeFabrication}, Disponibilité: {Disponibilite}");
+            Console.WriteLine($"ID: {Id}, Marque: {Marque}, Modèle: {Modele}, Année: {Annee}, Statut: {Statut}");
         }
     }
 }

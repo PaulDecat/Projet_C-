@@ -2,55 +2,81 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class ParcAutomobile
+namespace LocationVehicules
+{
+    public class Park
     {
-        private List<Voiture> voitures = new List<Voiture>();
-        private int prochainId = 1;
+        private List<Vehicule> vehicules;
+        private static readonly List<string> MarquesPredefinies = new List<string> { "Toyota", "Renault", "Peugeot", "Ford", "BMW" };
 
-        public void AjouterVoiture(string marque, string modele, int annee)
+        public Park()
         {
-            var voiture = new Voiture(prochainId++, marque, modele, annee);
-            voitures.Add(voiture);
-            Console.WriteLine($"Voiture ajoutée : {marque} {modele} ({annee}). ID: {voiture.Id}");
+            vehicules = new List<Vehicule>();
         }
 
-        public void ListerVoitures()
+        public void AjouterVehicule(int id, string marque, string modele, int annee)
         {
-            if (!voitures.Any())
+            if (!MarquesPredefinies.Contains(marque))
             {
-                Console.WriteLine("Aucune voiture dans le parc.");
+                Console.WriteLine($"Erreur : La marque '{marque}' n'est pas dans la liste prédéfinie.");
                 return;
             }
 
-            foreach (var voiture in voitures)
+            Vehicule vehicule = new Vehicule(id, marque, modele, annee);
+            vehicules.Add(vehicule);
+            Console.WriteLine("Véhicule ajouté avec succès.");
+        }
+
+        public void ListerVehicules()
+        {
+            if (vehicules.Count == 0)
             {
-                voiture.AfficherInfos();
+                Console.WriteLine("Aucun véhicule dans le parc.");
+                return;
+            }
+
+            foreach (var vehicule in vehicules)
+            {
+                vehicule.AfficherInfo();
             }
         }
 
-        public void LouerVoiture(int id)
+        public void LouerVehicule(int id)
         {
-            var voiture = voitures.FirstOrDefault(v => v.Id == id);
-            if (voiture != null)
+            var vehicule = vehicules.FirstOrDefault(v => v.Id == id);
+            if (vehicule == null)
             {
-                voiture.Louer();
+                Console.WriteLine("Erreur : Véhicule introuvable.");
+                return;
             }
-            else
+
+            if (vehicule.Statut == "Loué")
             {
-                Console.WriteLine("Voiture introuvable.");
+                Console.WriteLine("Erreur : Ce véhicule est déjà loué.");
+                return;
             }
+
+            vehicule.Statut = "Loué";
+            Console.WriteLine("Véhicule loué avec succès.");
         }
 
-        public void RendreVoiture(int id)
+        public void RendreVehicule(int id)
         {
-            var voiture = voitures.FirstOrDefault(v => v.Id == id);
-            if (voiture != null)
+            var vehicule = vehicules.FirstOrDefault(v => v.Id == id);
+            if (vehicule == null)
             {
-                voiture.Rendre();
+                Console.WriteLine("Erreur : Véhicule introuvable.");
+                return;
             }
-            else
+
+            if (vehicule.Statut == "Disponible")
             {
-                Console.WriteLine("Voiture introuvable.");
+                Console.WriteLine("Erreur : Ce véhicule n'est pas actuellement loué.");
+                return;
             }
+
+            vehicule.Statut = "Disponible";
+            Console.WriteLine("Véhicule rendu avec succès.");
         }
     }
+}
