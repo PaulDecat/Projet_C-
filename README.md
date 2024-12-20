@@ -41,8 +41,8 @@ dotnet run
 
 ## 🧩 Structure du projet
 - **Program.cs :** Contient le point d'entrée et le menu interactif de l'application.
-- **GestionParc.cs :** Gère les actions sur le parc de véhicules (ajout, liste, location, retour).
-- **Voiture.cs :** Définit la classe `Vehicule` avec ses attributs et méthodes.
+- **park.cs :** Gère les actions sur le parc de véhicules (ajout, liste, location, retour).
+- **vehicle.cs :** Définit la classe `Vehicule` avec ses attributs et méthodes.
 - **vehicules.txt :** Fichier de sauvegarde des données.
 
 ## 📄 Exemple d'utilisation
